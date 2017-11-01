@@ -52,4 +52,6 @@ app.get('/api/user/find', userController.findUser);
 app.get('/api/user/find/id', userController.findUserById);
 app.get('/api/user/delete', userController.deleteUser);
 secureRoutes.post('/post-data', userController.createUser);
-app.listen(port);
+app.listen(port, function(){
+    console.log('Our app is running on http://localhost:' + port);
+});
