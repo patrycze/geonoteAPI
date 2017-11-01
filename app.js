@@ -8,7 +8,7 @@ var jwt                     = require('jsonwebtoken');
 var authenticateController  = require('./controllers/authenticate-controller');
 var filterController        = require('./controllers/filter-controller');
 var noteController          = require('./controllers/note-controller');
-var port = process.env.port;
+var port = process.env.port || 8080;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
