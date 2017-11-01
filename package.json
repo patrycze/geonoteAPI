@@ -1,0 +1,17 @@
+{
+  "name": "nowe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "jsonwebtoken": "^8.0.0",
+    "mongoose": "4.11.10"
+  },
+  "author": "",
+  "license": "ISC"
+}
