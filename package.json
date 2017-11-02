@@ -15,7 +15,8 @@
     "body-parser": "latest",
     "express": "latest",
     "jsonwebtoken": "^8.0.0",
-    "mongoose": "4.11.10"
+    "mongoose": "4.11.10",
+    "ejs":"2.5.7"
   },
   "author": "",
   "license": "ISC"
