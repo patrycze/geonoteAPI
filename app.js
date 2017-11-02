@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 mongoose.connect(config.getDbConnections());  
-
+app.set('view engine', 'ejs');
 
 var secureRoutes = express.Router();
 
@@ -40,6 +40,13 @@ secureRoutes.use(function(req, res, next){
         res.send('we havent it, please send token');
     }
 });
+
+app.get('/', function(req, res) {
+    res.render('index');
+})
+
+
+
 app.post('/api/note/use', noteController.useNote);
 app.post('/api/note/create', noteController.createNote);
 app.post('/api/note/near', noteController.showNearestNotes);
